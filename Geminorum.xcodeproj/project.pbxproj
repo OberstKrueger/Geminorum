@@ -1,0 +1,733 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5690B20424EF272C00436F1C /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5690B20324EF272C00436F1C /* Tests_iOS.swift */; };
+		5690B20F24EF272C00436F1C /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5690B20E24EF272C00436F1C /* Tests_macOS.swift */; };
+		5690B21124EF272C00436F1C /* GeminorumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5690B1E824EF272B00436F1C /* GeminorumApp.swift */; };
+		5690B21224EF272C00436F1C /* GeminorumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5690B1E824EF272B00436F1C /* GeminorumApp.swift */; };
+		5690B21324EF272C00436F1C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5690B1E924EF272B00436F1C /* ContentView.swift */; };
+		5690B21424EF272C00436F1C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5690B1E924EF272B00436F1C /* ContentView.swift */; };
+		5690B21524EF272C00436F1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5690B1EA24EF272C00436F1C /* Assets.xcassets */; };
+		5690B21624EF272C00436F1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5690B1EA24EF272C00436F1C /* Assets.xcassets */; };
+		5690B22624EF274E00436F1C /* GeminiStatusCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5690B22524EF274E00436F1C /* GeminiStatusCodes.swift */; };
+		5690B22724EF274E00436F1C /* GeminiStatusCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5690B22524EF274E00436F1C /* GeminiStatusCodes.swift */; };
+		5690B22B24EF276900436F1C /* GeminiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5690B22924EF276900436F1C /* GeminiError.swift */; };
+		5690B22C24EF276900436F1C /* GeminiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5690B22924EF276900436F1C /* GeminiError.swift */; };
+		5690B22D24EF276900436F1C /* GeminiPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5690B22A24EF276900436F1C /* GeminiPage.swift */; };
+		5690B22E24EF276900436F1C /* GeminiPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5690B22A24EF276900436F1C /* GeminiPage.swift */; };
+		5690B23024EF27C800436F1C /* GeminiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5690B22F24EF27C800436F1C /* GeminiManager.swift */; };
+		5690B23124EF27C800436F1C /* GeminiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5690B22F24EF27C800436F1C /* GeminiManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5690B20024EF272C00436F1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5690B1E324EF272B00436F1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5690B1EE24EF272C00436F1C;
+			remoteInfo = "Geminorum (iOS)";
+		};
+		5690B20B24EF272C00436F1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5690B1E324EF272B00436F1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5690B1F624EF272C00436F1C;
+			remoteInfo = "Geminorum (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5690B1E824EF272B00436F1C /* GeminorumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminorumApp.swift; sourceTree = "<group>"; };
+		5690B1E924EF272B00436F1C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5690B1EA24EF272C00436F1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5690B1EF24EF272C00436F1C /* Geminorum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Geminorum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5690B1F224EF272C00436F1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5690B1F724EF272C00436F1C /* Geminorum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Geminorum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5690B1F924EF272C00436F1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5690B1FA24EF272C00436F1C /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		5690B1FF24EF272C00436F1C /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5690B20324EF272C00436F1C /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		5690B20524EF272C00436F1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5690B20A24EF272C00436F1C /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5690B20E24EF272C00436F1C /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		5690B21024EF272C00436F1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5690B22524EF274E00436F1C /* GeminiStatusCodes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeminiStatusCodes.swift; sourceTree = "<group>"; };
+		5690B22924EF276900436F1C /* GeminiError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeminiError.swift; sourceTree = "<group>"; };
+		5690B22A24EF276900436F1C /* GeminiPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeminiPage.swift; sourceTree = "<group>"; };
+		5690B22F24EF27C800436F1C /* GeminiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5690B1EC24EF272C00436F1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5690B1F424EF272C00436F1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5690B1FC24EF272C00436F1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5690B20724EF272C00436F1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5690B1E224EF272B00436F1C = {
+			isa = PBXGroup;
+			children = (
+				5690B1E724EF272B00436F1C /* Shared */,
+				5690B1F124EF272C00436F1C /* iOS */,
+				5690B1F824EF272C00436F1C /* macOS */,
+				5690B20224EF272C00436F1C /* Tests iOS */,
+				5690B20D24EF272C00436F1C /* Tests macOS */,
+				5690B1F024EF272C00436F1C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5690B1E724EF272B00436F1C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				5690B1E824EF272B00436F1C /* GeminorumApp.swift */,
+				5690B1E924EF272B00436F1C /* ContentView.swift */,
+				5690B22F24EF27C800436F1C /* GeminiManager.swift */,
+				5690B22824EF275300436F1C /* Gemini Protocol */,
+				5690B1EA24EF272C00436F1C /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		5690B1F024EF272C00436F1C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5690B1EF24EF272C00436F1C /* Geminorum.app */,
+				5690B1F724EF272C00436F1C /* Geminorum.app */,
+				5690B1FF24EF272C00436F1C /* Tests iOS.xctest */,
+				5690B20A24EF272C00436F1C /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5690B1F124EF272C00436F1C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5690B1F224EF272C00436F1C /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		5690B1F824EF272C00436F1C /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				5690B1F924EF272C00436F1C /* Info.plist */,
+				5690B1FA24EF272C00436F1C /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		5690B20224EF272C00436F1C /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5690B20324EF272C00436F1C /* Tests_iOS.swift */,
+				5690B20524EF272C00436F1C /* Info.plist */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		5690B20D24EF272C00436F1C /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				5690B20E24EF272C00436F1C /* Tests_macOS.swift */,
+				5690B21024EF272C00436F1C /* Info.plist */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		5690B22824EF275300436F1C /* Gemini Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				5690B22924EF276900436F1C /* GeminiError.swift */,
+				5690B22A24EF276900436F1C /* GeminiPage.swift */,
+				5690B22524EF274E00436F1C /* GeminiStatusCodes.swift */,
+			);
+			path = "Gemini Protocol";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5690B1EE24EF272C00436F1C /* Geminorum (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5690B21924EF272C00436F1C /* Build configuration list for PBXNativeTarget "Geminorum (iOS)" */;
+			buildPhases = (
+				5690B1EB24EF272C00436F1C /* Sources */,
+				5690B1EC24EF272C00436F1C /* Frameworks */,
+				5690B1ED24EF272C00436F1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Geminorum (iOS)";
+			productName = "Geminorum (iOS)";
+			productReference = 5690B1EF24EF272C00436F1C /* Geminorum.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5690B1F624EF272C00436F1C /* Geminorum (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5690B21C24EF272C00436F1C /* Build configuration list for PBXNativeTarget "Geminorum (macOS)" */;
+			buildPhases = (
+				5690B1F324EF272C00436F1C /* Sources */,
+				5690B1F424EF272C00436F1C /* Frameworks */,
+				5690B1F524EF272C00436F1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Geminorum (macOS)";
+			productName = "Geminorum (macOS)";
+			productReference = 5690B1F724EF272C00436F1C /* Geminorum.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5690B1FE24EF272C00436F1C /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5690B21F24EF272C00436F1C /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				5690B1FB24EF272C00436F1C /* Sources */,
+				5690B1FC24EF272C00436F1C /* Frameworks */,
+				5690B1FD24EF272C00436F1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5690B20124EF272C00436F1C /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = 5690B1FF24EF272C00436F1C /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		5690B20924EF272C00436F1C /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5690B22224EF272C00436F1C /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				5690B20624EF272C00436F1C /* Sources */,
+				5690B20724EF272C00436F1C /* Frameworks */,
+				5690B20824EF272C00436F1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5690B20C24EF272C00436F1C /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = 5690B20A24EF272C00436F1C /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5690B1E324EF272B00436F1C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					5690B1EE24EF272C00436F1C = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					5690B1F624EF272C00436F1C = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					5690B1FE24EF272C00436F1C = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 5690B1EE24EF272C00436F1C;
+					};
+					5690B20924EF272C00436F1C = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 5690B1F624EF272C00436F1C;
+					};
+				};
+			};
+			buildConfigurationList = 5690B1E624EF272B00436F1C /* Build configuration list for PBXProject "Geminorum" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5690B1E224EF272B00436F1C;
+			productRefGroup = 5690B1F024EF272C00436F1C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5690B1EE24EF272C00436F1C /* Geminorum (iOS) */,
+				5690B1F624EF272C00436F1C /* Geminorum (macOS) */,
+				5690B1FE24EF272C00436F1C /* Tests iOS */,
+				5690B20924EF272C00436F1C /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5690B1ED24EF272C00436F1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5690B21524EF272C00436F1C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5690B1F524EF272C00436F1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5690B21624EF272C00436F1C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5690B1FD24EF272C00436F1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5690B20824EF272C00436F1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5690B1EB24EF272C00436F1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5690B23024EF27C800436F1C /* GeminiManager.swift in Sources */,
+				5690B22D24EF276900436F1C /* GeminiPage.swift in Sources */,
+				5690B21324EF272C00436F1C /* ContentView.swift in Sources */,
+				5690B21124EF272C00436F1C /* GeminorumApp.swift in Sources */,
+				5690B22624EF274E00436F1C /* GeminiStatusCodes.swift in Sources */,
+				5690B22B24EF276900436F1C /* GeminiError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5690B1F324EF272C00436F1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5690B23124EF27C800436F1C /* GeminiManager.swift in Sources */,
+				5690B22E24EF276900436F1C /* GeminiPage.swift in Sources */,
+				5690B21424EF272C00436F1C /* ContentView.swift in Sources */,
+				5690B21224EF272C00436F1C /* GeminorumApp.swift in Sources */,
+				5690B22724EF274E00436F1C /* GeminiStatusCodes.swift in Sources */,
+				5690B22C24EF276900436F1C /* GeminiError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5690B1FB24EF272C00436F1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5690B20424EF272C00436F1C /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5690B20624EF272C00436F1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5690B20F24EF272C00436F1C /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5690B20124EF272C00436F1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5690B1EE24EF272C00436F1C /* Geminorum (iOS) */;
+			targetProxy = 5690B20024EF272C00436F1C /* PBXContainerItemProxy */;
+		};
+		5690B20C24EF272C00436F1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5690B1F624EF272C00436F1C /* Geminorum (macOS) */;
+			targetProxy = 5690B20B24EF272C00436F1C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5690B21724EF272C00436F1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5690B21824EF272C00436F1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		5690B21A24EF272C00436F1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZM4N24RK3Z;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = technology.krueger.Geminorum;
+				PRODUCT_NAME = Geminorum;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5690B21B24EF272C00436F1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZM4N24RK3Z;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = technology.krueger.Geminorum;
+				PRODUCT_NAME = Geminorum;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5690B21D24EF272C00436F1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = ZM4N24RK3Z;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = technology.krueger.Geminorum;
+				PRODUCT_NAME = Geminorum;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5690B21E24EF272C00436F1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = ZM4N24RK3Z;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = technology.krueger.Geminorum;
+				PRODUCT_NAME = Geminorum;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5690B22024EF272C00436F1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZM4N24RK3Z;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "technology.krueger.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Geminorum (iOS)";
+			};
+			name = Debug;
+		};
+		5690B22124EF272C00436F1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZM4N24RK3Z;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "technology.krueger.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Geminorum (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5690B22324EF272C00436F1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = ZM4N24RK3Z;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "technology.krueger.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Geminorum (macOS)";
+			};
+			name = Debug;
+		};
+		5690B22424EF272C00436F1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = ZM4N24RK3Z;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "technology.krueger.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Geminorum (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5690B1E624EF272B00436F1C /* Build configuration list for PBXProject "Geminorum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5690B21724EF272C00436F1C /* Debug */,
+				5690B21824EF272C00436F1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5690B21924EF272C00436F1C /* Build configuration list for PBXNativeTarget "Geminorum (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5690B21A24EF272C00436F1C /* Debug */,
+				5690B21B24EF272C00436F1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5690B21C24EF272C00436F1C /* Build configuration list for PBXNativeTarget "Geminorum (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5690B21D24EF272C00436F1C /* Debug */,
+				5690B21E24EF272C00436F1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5690B21F24EF272C00436F1C /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5690B22024EF272C00436F1C /* Debug */,
+				5690B22124EF272C00436F1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5690B22224EF272C00436F1C /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5690B22324EF272C00436F1C /* Debug */,
+				5690B22424EF272C00436F1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5690B1E324EF272B00436F1C /* Project object */;
+}

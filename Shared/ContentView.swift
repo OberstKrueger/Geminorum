@@ -1,0 +1,39 @@
+import SwiftUI
+
+struct ContentView: View {
+    @ObservedObject var manager = GeminiManager()
+    @State var addressBar: String = "gemini://gemini.circumlunar.space"
+
+    var body: some View {
+        VStack {
+            HStack {
+                TextField("Address Bar", text: $addressBar)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                Button(action: {
+                    self.addressBar = self.addressBar.lowercased()
+                    self.manager.loadPage(url: addressBar.lowercased())
+                }, label: {
+                    Image(systemName: "return")
+                })
+            }
+            .padding()
+            Divider()
+            ScrollView {
+                if let page = manager.page, let body = page.body {
+                    Text(body)
+                        .padding()
+                }
+            }
+        }
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        Group {
+            ContentView(manager: GeminiManager())
+            ContentView(manager: GeminiManager())
+                .preferredColorScheme(.dark)
+        }
+    }
+}
