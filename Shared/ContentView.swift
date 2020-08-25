@@ -7,11 +7,15 @@ struct ContentView: View {
     var body: some View {
         VStack {
             HStack {
-                TextField("Address Bar", text: $addressBar)
+                TextField("Address Bar", text: $addressBar, onCommit: ({
+                    self.addressBar = self.addressBar.lowercased()
+                    self.manager.geminiTransaction(input: addressBar)
+                }))
+                    .textCase(.lowercase)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 Button(action: {
                     self.addressBar = self.addressBar.lowercased()
-                    self.manager.loadPage(url: addressBar.lowercased())
+                    self.manager.geminiTransaction(input: addressBar)
                 }, label: {
                     Image(systemName: "return")
                 })

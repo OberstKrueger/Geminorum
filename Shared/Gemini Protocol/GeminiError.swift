@@ -1,4 +1,8 @@
 public enum GeminiError: Error, Equatable {
-    case invalidScheme(String)
-    case invalidURL(String)
+    case schemeInvalid(String)
+
+    case requestInvalid
+    case requestTooLarge(Int)
+
+    case URLInvalid(String)
 }
