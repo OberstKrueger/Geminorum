@@ -7,8 +7,10 @@ public struct GeminiPage {
 
     var body: String {
         switch (statusCode, statusMeta) {
+        case (.success, "text/gemini"):
+            return bodyResponse ?? "Body is empty."
         default:
-            return ""
+            return bodyResponse ?? "Body is empty."
         }
 
     }
