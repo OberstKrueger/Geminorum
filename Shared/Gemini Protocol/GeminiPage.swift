@@ -3,7 +3,15 @@ import Foundation
 public struct GeminiPage {
     var statusCode: GeminiStatusCode?
     var statusMeta: String?
-    var body: String?
+    var bodyResponse: String?
+
+    var body: String {
+        switch (statusCode, statusMeta) {
+        default:
+            return ""
+        }
+
+    }
 
     init(response: String) {
         for components in response.split(separator: "\r\n").enumerated() {
@@ -23,7 +31,7 @@ public struct GeminiPage {
                     }
                 }
             } else {
-                body = String(components.element)
+                bodyResponse = String(components.element)
             }
         }
     }

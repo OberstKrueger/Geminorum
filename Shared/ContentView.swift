@@ -23,8 +23,8 @@ struct ContentView: View {
             .padding()
             Divider()
             ScrollView {
-                if let page = manager.page, let body = page.body {
-                    Text(body)
+                if let page = manager.page {
+                    Text(page.body)
                         .padding()
                 }
             }
